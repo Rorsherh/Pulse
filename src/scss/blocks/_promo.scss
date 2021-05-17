@@ -1,0 +1,11 @@
+.promo {
+  background-color: green;
+  background: url("../img/promo-bg.jpg") center center/cover no-repeat;
+  color: #fff;
+  &__wrapper {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 0 14px;
+    min-height: 650px;
+  }
+}

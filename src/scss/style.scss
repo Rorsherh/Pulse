@@ -1,6 +1,4 @@
-h2,
-p {
-  font-family: "Roboto";
-}
-
+@import "base/global";
+@import "base/variable";
+@import "blocks/promo";
 @import "blocks/main-header";

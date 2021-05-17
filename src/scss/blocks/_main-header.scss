@@ -1,5 +1,7 @@
 .main-header {
-  color: green;
-  text-decoration: underline;
-  padding-top: 120px;
+  &__wrapper {
+    display: flex;
+    padding-top: 21px;
+    max-width: 950px;
+  }
 }
