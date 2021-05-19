@@ -1,7 +1,54 @@
 .main-header {
   &__wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     padding-top: 21px;
     max-width: 950px;
+    @include borderblue;
+  }
+
+  &__logo {
+    margin: 0;
+    padding: 0;
+    &-img {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__info {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    @include borderblack;
+    span {
+      font-size: 18px;
+      line-height: 29px;
+    }
+  }
+
+  &__call {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__phone {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    width: 153px;
   }
 }
