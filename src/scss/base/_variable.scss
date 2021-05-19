@@ -1,2 +1,10 @@
-$mainRad: #c70101;
+$mainRed: #c70101;
 $maxWidth: 970px;
+
+@mixin borderblack {
+  outline: 1px solid black;
+}
+
+@mixin borderblue {
+  outline: 1px solid blue;
+}
