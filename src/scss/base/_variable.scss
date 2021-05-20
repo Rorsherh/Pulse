@@ -8,3 +8,8 @@ $maxWidth: 970px;
 @mixin borderblue {
   outline: 1px solid blue;
 }
+
+@mixin container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
