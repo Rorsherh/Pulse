@@ -1,0 +1,23 @@
+.main-form {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  &__text,
+  &__phone,
+  &__mail {
+    padding: 16.5px 21px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b4b4b;
+    border: none;
+    border-radius: 5px;
+    &::placeholder {
+      color: #4b4b4b;
+    }
+  }
+  &__mail {
+    margin-bottom: 20px;
+  }
+}
