@@ -12,6 +12,7 @@
   background-color: $mainRed;
   border-radius: 5px;
   transition: all 0.25s;
+  cursor: pointer;
   &:hover {
     color: $mainRed;
     background-color: #fff;

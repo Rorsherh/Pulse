@@ -1,0 +1,30 @@
+.slider {
+  &__wrapper {
+    @include container;
+    padding: 70px 0;
+  }
+
+  &__box {
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    img {
+      display: block;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50px;
+    right: auto;
+  }
+  .slick-next {
+    right: -50px;
+    left: auto;
+  }
+}
