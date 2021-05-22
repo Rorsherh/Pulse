@@ -1,0 +1,51 @@
+.catalog {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  &__wrapper {
+    @include container;
+    padding: 20px 0 40px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 45px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0d0d0d;
+  }
+
+  &__tabs-box {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__tab {
+    position: relative;
+    width: 220px;
+    padding: 15px 0;
+    margin: 0 10px;
+    text-align: center;
+    border: 2px solid #d0d0d0;
+    transform: skewX(-23deg);
+    cursor: pointer;
+    transition: 0.4s all;
+    &:hover {
+      box-shadow: 3px 3px 20px $mainRed;
+      border-color: rgba($color: #d0d0d0, $alpha: 0);
+    }
+    div {
+      transform: skewX(23deg);
+    }
+    &--active {
+      color: #fff;
+      background-color: $mainRed;
+      border-color: $mainRed;
+    }
+  }
+}
