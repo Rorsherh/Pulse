@@ -32,4 +32,29 @@ $(document).ready(function(){
       });
 
 
+      // modal
+
+      $('[data-modal=consult]').on('click', function(e) {
+          e.preventDefault();
+        $('.overlay, #consult').fadeIn();
+      });
+
+      $('.button-red--buy').on('click', function(e) {
+        e.preventDefault();
+      $('.overlay, #order').fadeIn();
+    });
+
+
+    $('.button-red--buy').each(function(i){
+        $(this).on('click', function(){
+            $('#order .modal__description').text($('.product-card__title').eq(i).text());
+        })
+    });
+
+
+      $('.modal__close').on('click', function() {
+        $('.overlay,#consult, #order, #thanks').fadeOut();
+      });
+
+
   });

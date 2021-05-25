@@ -30,7 +30,7 @@
                     </p>
                     <div class="main-header__call">
                         <a class="main-header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
-                        <a class="button-red main-header__button" href="#">Заказать звонок</a>
+                        <a class="button-red main-header__button" href="#" data-modal="consult">Заказать звонок</a>
                     </div>
                 </div>
             </header>
@@ -62,7 +62,8 @@
                         </p>
                     </li>
                 </ul>
-                <a href="#" class="button-red button-red--big promo__link-call">заказать консультацию</a>
+                <a href="#" class="button-red button-red--big promo__link-call" data-modal="consult">заказать
+                    консультацию</a>
                 <span class="promo__link-catalog">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></span>
             </div>
         </div>
@@ -219,7 +220,7 @@
                             <div class="product-card__content product-card__content--active">
                                 <img class="product-card__img" src="img/photo.png" alt="пульсометр">
                                 <h3 class="product-card__title">
-                                    Пульсометр Polar FT1
+                                    Пульсометр aaaaa FT1
                                 </h3>
                                 <p class="product-card__text">
                                     Для первых шагов в тренировках, основанных на сердечном ритме
@@ -271,7 +272,7 @@
                             <div class="product-card__content">
                                 <img class="product-card__img" src="img/photo.png" alt="пульсометр">
                                 <h3 class="product-card__title">
-                                    Пульсометр Polar FT1
+                                    Пульсометр bbbbb FT1
                                 </h3>
                                 <p class="product-card__text">
                                     Для первых шагов в тренировках, основанных на сердечном ритме
@@ -324,7 +325,7 @@
                             <div class="product-card__content product-card__content--active">
                                 <img class="product-card__img" src="img/photo.png" alt="пульсометр">
                                 <h3 class="product-card__title">
-                                    Пульсометр Polar FT1
+                                    Пульсометр ccccc FT1
                                 </h3>
                                 <p class="product-card__text">
                                     Для первых шагов в тренировках, основанных на сердечном ритме
@@ -376,7 +377,7 @@
                             <div class="product-card__content product-card__content--active">
                                 <img class="product-card__img" src="img/photo.png" alt="пульсометр">
                                 <h3 class="product-card__title">
-                                    Пульсометр Polar FT1
+                                    Пульсометр ddddd FT1
                                 </h3>
                                 <p class="product-card__text">
                                     Для первых шагов в тренировках, основанных на сердечном ритме
@@ -428,7 +429,7 @@
                             <div class="product-card__content product-card__content--active">
                                 <img class="product-card__img" src="img/photo.png" alt="пульсометр">
                                 <h3 class="product-card__title">
-                                    Пульсометр Polar FT1
+                                    Пульсометр eeeee FT1
                                 </h3>
                                 <p class="product-card__text">
                                     Для первых шагов в тренировках, основанных на сердечном ритме
@@ -803,8 +804,61 @@
             </div>
         </div>
     </footer>
-
     <!--    ----    ----  footer end  ----    ----  -->
+
+    <!--    ++++    ++++  modal start  ++++    ++++  -->
+    <div class="overlay">
+        <section class="modal" id="consult">
+            <div class="modal__wrapper">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">
+                    Просто заполните форму заявки
+                </div>
+                <div class="modal__description">
+                    и мы перезвоним вам в течении 10 минут
+                </div>
+
+                <fomr class="main-form modal-form">
+                    <input class="main-form__text" type="text" placeholder="Ваше имя">
+                    <input class="main-form__phone" type="tel" name="" placeholder="Ваш телефон">
+                    <input class="main-form__mail" type="email" name="" placeholder="Ваш E-mail">
+                    <input class="button-red button-red--big" type="submit" value="заказать консультацию">
+                </fomr>
+            </div>
+        </section>
+
+        <section class="modal" id="order">
+            <div class="modal__wrapper">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">
+                    Ваш заказ:
+                </div>
+                <div class="modal__description">
+                    Пульсометр Polar FT1
+                </div>
+
+                <fomr class="main-form modal-form">
+                    <input class="main-form__text" type="text" placeholder="Ваше имя">
+                    <input class="main-form__phone" type="tel" name="" placeholder="Ваш телефон">
+                    <input class="main-form__mail" type="email" name="" placeholder="Ваш E-mail">
+                    <input class="button-red button-red--big" type="submit" value="купить">
+                </fomr>
+            </div>
+        </section>
+
+        <section class="modal" id="thanks">
+            <div class="modal__wrapper">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">
+                    Спасибо за вашу заявку!
+                </div>
+                <div class="modal__description">
+                    Наш менеджер свяжется с вами в ближайшее время!
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--    ----    ----  modal end  ----    ----  -->
 
 
 </body>
