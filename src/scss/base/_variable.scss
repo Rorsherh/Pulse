@@ -9,6 +9,10 @@ $maxWidth: 970px;
   outline: 1px solid blue;
 }
 
+@mixin bordergreen {
+  outline: 3px dashed green;
+}
+
 @mixin container {
   max-width: $maxWidth;
   margin: 0 auto;
