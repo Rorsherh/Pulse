@@ -5,7 +5,7 @@
   color: #6b6b6b;
   &__wrapper {
     @include container;
-    padding: 20px 0 40px;
+    padding: 20px 15px 40px;
   }
 
   &__title {
@@ -23,6 +23,7 @@
     list-style-type: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
   }
 
   &__tab {
@@ -47,5 +48,18 @@
       background-color: $mainRed;
       border-color: $mainRed;
     }
+  }
+
+  &__content {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &--active {
+      display: flex;
+    }
+  }
+
+  &__porduct-card {
+    margin-bottom: 20px;
   }
 }
