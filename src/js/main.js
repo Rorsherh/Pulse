@@ -13,7 +13,7 @@ $(document).ready(function(){
             e.preventDefault();
             $('.product-card__content').eq(i).toggleClass('product-card__content--active');
             $('.product-card__feature').eq(i).toggleClass('product-card__feature--active');
-        })
+        });
     });
 
     $('.product-card__back').each(function(i) {
@@ -21,7 +21,7 @@ $(document).ready(function(){
             e.preventDefault();
             $('.product-card__content').eq(i).toggleClass('product-card__content--active');
             $('.product-card__feature').eq(i).toggleClass('product-card__feature--active');
-        })
+        });
     });
 
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
     $('.button-red--buy').each(function(i){
         $(this).on('click', function(){
             $('#order .modal__description').text($('.product-card__title').eq(i).text());
-        })
+        });
     });
 
 
